@@ -1,0 +1,279 @@
+// FONTS
+@font-face {
+  font-family: "C64";
+  src:
+    url("../fonts/C64_Pro_Mono-STYLE.woff2") format("woff2");
+}
+
+$font-default: 400 14px/1.3 "C64";
+
+
+// COLORS
+
+$color-primary: black;
+$color-secondary: white;
+$color-tertiary: black;
+
+$color-text-default: $color-secondary;
+$color-text-hover: $color-secondary;
+
+
+
+// CUSTOM WEBCHAT
+
+[data-cognigy-webchat-root] button[data-cognigy-webchat-toggle] {
+  display: none;
+}
+
+
+
+$data-cognigy-root: '[data-cognigy-webchat-root] [data-cognigy-webchat].webchat';
+
+#{$data-cognigy-root} {
+
+  width: 50%;
+  height: 100%;
+  border-radius: 0px;
+  top: 0px;
+  left: 0px;
+  border-right: 2px solid $color-tertiary;
+
+  box-shadow: none;
+
+  // Prevents webchat selection marker
+  .cognigy-webchat-lp09xd {
+    outline: none !important;
+  }
+
+  .cognigy-webchat-eogigz {
+    background-color: $color-primary;
+  }
+
+  .cognigy-webchat-jp6aq7 {
+    outline: transparent;
+  }
+
+  .webchat-header-bar {
+    display: none;
+  }
+
+  button.webchat-toggle-button {
+    display: none;
+  }
+
+  .cognigy-webchat-1b2oxvp {
+    color: $color-text-default;
+    font: $font-default;
+  }
+
+
+
+  // MESSAGES
+
+  // Message header (agent and bot)
+  .webchat-message-row {
+    margin: 0px;
+    padding: 0px 24px;
+  }
+
+  .message-header {
+    gap: 16px;
+    margin-block-end: 0px;
+    flex-direction: row !important;
+    margin-block-start: 24px;
+  }
+
+  .message-header img {
+    display: none;
+  }
+
+  .message-header._outgoing_21mid_19::before {
+    content: "USER";
+    color: $color-text-default;
+    font: $font-default;
+  }
+
+  // Agent/bot avatar
+  ._avatar_ry0w9_1 {
+    width: 24px;
+    height: 24px;
+    background-color: $color-primary;
+  }
+
+  // Agent/bot name
+  ._avatar-name_21mid_27 {
+    color: $color-text-default;
+    font: $font-default;
+  }
+
+  // Remove dot from message header
+  ._headerMeta_21mid_13 svg {
+    display: none;
+  }
+
+  ._headerMeta_21mid_13 {
+    gap: 16px;
+  }
+
+  // Message timestamps (agent, bot and user)
+  ._timestamp_21mid_23 {
+    color: $color-text-default;
+    font: $font-default;
+  }
+
+  // Message bubble (agent and bot)
+  .chat-bubble {
+    margin-inline-start: 0px;
+    max-width: 100%;
+    border: none;
+    color: $color-text-default;
+    font: $font-default;
+    background-color: $color-primary;
+    padding: 0px;
+    border-radius: 0px;
+    margin-bottom: 8px;
+  }
+
+  article.user {
+    border-left: 16px solid $color-secondary;
+    margin-left: 24px;
+  }
+
+
+
+
+  // QUICK REPLIES
+
+  .webchat-quick-reply-template-root {
+    margin-bottom: 8px;
+  }
+
+  .webchat-quick-reply-template-replies-container {
+    width: 100%;
+    max-width: 100%;
+    justify-content: left;
+  }
+
+  .webchat-quick-reply-template-button {
+    padding: 1px;
+    border-radius: 0px;
+    border: none;
+    background-color: $color-primary;
+    gap: 8px;
+  }
+
+  .webchat-quick-reply-template-button:focus {
+    background-color: $color-secondary;
+    outline: none;
+
+    ._cta-semibold_1tlzl_81 {
+      color: $color-primary;
+    }
+  }
+
+  .webchat-quick-reply-template-button::before {
+    content: "[";
+    color: $color-text-default;
+    font: $font-default;
+  }
+
+  .webchat-quick-reply-template-button::after {
+    content: "]";
+    color: $color-text-default;
+    font: $font-default;
+  }
+
+  .webchat-quick-reply-template-button ._cta-semibold_1tlzl_81 {
+    color: $color-text-default;
+    font: $font-default;
+    text-transform: uppercase;
+  }
+
+  .webchat-quick-reply-template-button:hover {
+    background-color: $color-secondary;
+
+    ._cta-semibold_1tlzl_81 {
+      color: $color-primary;
+    }
+  }
+
+  // Hides previous, disabled quick replies 
+  .webchat-quick-reply-template-replies-container .disabled {
+    display: none;
+  }
+
+
+
+
+  // INPUT BAR
+
+  .webchat-input {
+    background: $color-primary;
+    border-radius: 0px;
+    gap: 0px;
+    border-top: 2px solid $color-tertiary;
+    padding: 20px;
+  }
+
+  .webchat-input-message-input {
+    color: $color-text-default;
+    font: $font-default;
+    padding: 2px;
+    border-radius: 0px;
+    caret-color: transparent;
+  }
+
+  .webchat-input-message-input::-webkit-scrollbar {
+    /*Chrome, Safari, Edge*/
+    display: none;
+  }
+
+  .webchat-input-message-input:focus {
+    background-color: #808080;
+  }
+
+  .webchat-input-message-input::placeholder {
+    color: $color-text-default;
+    opacity: 100%;
+  }
+
+
+  // Send button
+  .webchat-input-button-send {
+    content: "";
+    animation: blink 1s step-end infinite;
+    background-color: $color-secondary;
+    width: 16px;
+    height: 24px;
+  }
+
+  .webchat-input-button-send svg {
+    display: none;
+  }
+
+  @keyframes blink {
+
+    from,
+    to {
+      opacity: 0%;
+    }
+
+    50% {
+      opacity: 100%;
+    }
+  }
+
+}
+
+// Input active state
+[data-cognigy-webchat-root] .cognigy-webchat-1qz6p4v.webchat-input-text-active {
+  border-bottom-color: $color-primary !important;
+}
+
+@media only screen and (max-width: 700px) {
+  #{$data-cognigy-root} {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+  }
+}

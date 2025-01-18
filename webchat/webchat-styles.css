@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "C64";
+  src: url("../fonts/C64_Pro_Mono-STYLE.woff2") format("woff2");
+}
+[data-cognigy-webchat-root] button[data-cognigy-webchat-toggle] {
+  display: none;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat {
+  width: 50%;
+  height: 100%;
+  border-radius: 0px;
+  top: 0px;
+  left: 0px;
+  border-right: 2px solid black;
+  box-shadow: none;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .cognigy-webchat-lp09xd {
+  outline: none !important;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .cognigy-webchat-eogigz {
+  background-color: black;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .cognigy-webchat-jp6aq7 {
+  outline: transparent;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-header-bar {
+  display: none;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat button.webchat-toggle-button {
+  display: none;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .cognigy-webchat-1b2oxvp {
+  color: white;
+  font: 400 14px/1.3 "C64";
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-message-row {
+  margin: 0px;
+  padding: 0px 24px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .message-header {
+  gap: 16px;
+  margin-block-end: 0px;
+  flex-direction: row !important;
+  margin-block-start: 24px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .message-header img {
+  display: none;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .message-header._outgoing_21mid_19::before {
+  content: "USER";
+  color: white;
+  font: 400 14px/1.3 "C64";
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat ._avatar_ry0w9_1 {
+  width: 24px;
+  height: 24px;
+  background-color: black;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat ._avatar-name_21mid_27 {
+  color: white;
+  font: 400 14px/1.3 "C64";
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat ._headerMeta_21mid_13 svg {
+  display: none;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat ._headerMeta_21mid_13 {
+  gap: 16px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat ._timestamp_21mid_23 {
+  color: white;
+  font: 400 14px/1.3 "C64";
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .chat-bubble {
+  margin-inline-start: 0px;
+  max-width: 100%;
+  border: none;
+  color: white;
+  font: 400 14px/1.3 "C64";
+  background-color: black;
+  padding: 0px;
+  border-radius: 0px;
+  margin-bottom: 8px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat article.user {
+  border-left: 16px solid white;
+  margin-left: 24px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-root {
+  margin-bottom: 8px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-replies-container {
+  width: 100%;
+  max-width: 100%;
+  justify-content: left;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-button {
+  padding: 1px;
+  border-radius: 0px;
+  border: none;
+  background-color: black;
+  gap: 8px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-button:focus {
+  background-color: white;
+  outline: none;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-button:focus ._cta-semibold_1tlzl_81 {
+  color: black;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-button::before {
+  content: "[";
+  color: white;
+  font: 400 14px/1.3 "C64";
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-button::after {
+  content: "]";
+  color: white;
+  font: 400 14px/1.3 "C64";
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-button ._cta-semibold_1tlzl_81 {
+  color: white;
+  font: 400 14px/1.3 "C64";
+  text-transform: uppercase;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-button:hover {
+  background-color: white;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-button:hover ._cta-semibold_1tlzl_81 {
+  color: black;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-quick-reply-template-replies-container .disabled {
+  display: none;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input {
+  background: black;
+  border-radius: 0px;
+  gap: 0px;
+  border-top: 2px solid black;
+  padding: 20px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-message-input {
+  color: white;
+  font: 400 14px/1.3 "C64";
+  padding: 2px;
+  border-radius: 0px;
+  caret-color: transparent;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-message-input::-webkit-scrollbar {
+  /*Chrome, Safari, Edge*/
+  display: none;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-message-input:focus {
+  background-color: #808080;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-message-input::-moz-placeholder {
+  color: white;
+  opacity: 100%;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-message-input::placeholder {
+  color: white;
+  opacity: 100%;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-button-send {
+  content: "";
+  animation: blink 1s step-end infinite;
+  background-color: white;
+  width: 16px;
+  height: 24px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-button-send svg {
+  display: none;
+}
+@keyframes blink {
+  from, to {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+}
+
+[data-cognigy-webchat-root] .cognigy-webchat-1qz6p4v.webchat-input-text-active {
+  border-bottom-color: black !important;
+}
+
+@media only screen and (max-width: 700px) {
+  [data-cognigy-webchat-root] [data-cognigy-webchat].webchat {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+  }
+}/*# sourceMappingURL=webchat-styles.css.map */
